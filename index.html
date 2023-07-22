@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="Card">
+      <div class="Card__Front" id="Card">
+        <img
+          class="Card__Front__Background"
+          src="./images/mapa mundi.jpg"
+          alt="mapa mundi"
+        />
+        <div class="Card__Front__Content">
+          <h1 class="Content-Tittle">Credit Card</h1>
+          <div class="Content-img">
+            <img class="imagen" src="./images/Chip.png" alt="Chip" />
+            <img class="imagen" src="./images/wifi.png" alt="wifi" />
+          </div>
+          <p class="Content-ID" id="ID"></p>
+          <div class="Content-Date">
+            <p class="Content-Date__Info">Valid Thru</p>
+            <div class="Content-Date__Date" >
+              <p class="Month" id="Month"></p>
+              <p>/</p>
+              <p class="Year" id="Year"></p>
+            </div>
+          </div>
+          <div class="visa">
+            <img class="visa__img" src="./images/visa.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="Card-Back">
+        <div class="bar"></div>
+        
+      </div>
+    </div>
+    <div>
+      <button class="Button" id="Generate">Generar</button>
+      <button class="Button">Voltear</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

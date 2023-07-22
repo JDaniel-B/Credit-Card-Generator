@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #002;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Card {
+  width: 600px;
+  border-radius: 1rem;
+  height: 300px;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.Card__Front {
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.Card__Front__Background {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+}
+.Card__Front__Content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+}
+.Card__Front__Content .Content-Tittle {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+.Card__Front__Content .Content-img {
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+.Card__Front__Content .imagen {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+}
+.Card__Front__Content .Content-ID {
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+}
+.Card__Front__Content .Content-Date {
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+}
+.Card__Front__Content .Content-Date__Info {
+  margin: 0 10px;
+}
+.Card__Front__Content .Content-Date__Date {
+  letter-spacing: 4px;
+  display: flex;
+}
+.Card__Front__Content .visa {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: cneter;
+  justify-content: end;
+}
+.Card__Front__Content .visa__img {
+  height: 40px;
+  width: 130px;
+  margin-right: 20px;
+}
+.Card__Front:hover {
+  box-shadow: 0px 0px 50px rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=styles.css.map */
